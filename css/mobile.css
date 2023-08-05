@@ -1,6 +1,6 @@
 body {
     text-align: center;
-
+    width: 100%;
 }
 
 .redes {
@@ -13,6 +13,7 @@ body {
 
 .banner-titulo {
     text-shadow: 1px 1px 1px rgb(233, 233, 233);
+    margin-top: 40px;
 }
 
 .contact_bt {
@@ -21,6 +22,7 @@ body {
 
 .btn_main {
     margin-left: 70px;
+    padding: 0;
 }
 
 .contact_bt.active a {
@@ -46,7 +48,8 @@ body {
     margin-bottom: 80px;
 }
 
-.reseñas-lista {
+.reseñas-lista,
+.reseña-item {
     display: flex;
     flex-direction: column;
 }
@@ -57,17 +60,22 @@ body {
 }
 
 .lorem_text {
-    margin-left: 100px;
+    margin-left: 70px;
     margin-bottom: 30px;
 
 }
 
-.carrito-icon {
+
+.carrito-modal {
     position: fixed;
-    bottom: 20px;
+    bottom: 90px;
     left: 20px;
-    /* Ajusta la posición hacia la izquierda */
-    width: 50px;
-    height: 50px;
+    padding: 15px;
+    max-width: 250px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     z-index: 1000;
+    display: none;
 }

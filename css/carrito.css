@@ -1,7 +1,7 @@
 .carrito-icon {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 80px;
 }
 
 .mostrar-carrito {
@@ -93,18 +93,4 @@
 .titulo-carrito {
   font-size: 1.4rem;
   padding: 0;
-}
-
-.carrito-modal {
-  position: fixed;
-  bottom: 90px;
-  left: 20px;
-  padding: 15px;
-  max-width: 250px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  z-index: 1000;
-  display: none;
 }
