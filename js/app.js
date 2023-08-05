@@ -212,14 +212,36 @@ fetch(urlReseñas)
     console.error('Error al cargar reseñas:', error);
   });
 
+
 sendButton.addEventListener("click", function (evt) {
   evt.preventDefault();
 
-  Swal.fire('Mensaje Enviado');
+  const name = document.getElementsByName("Name")[0].value.trim();
+  const email = document.getElementsByName("Email")[0].value.trim();
+  const phone = document.getElementsByName("Phone Number")[0].value.trim();
+  const message = document.getElementById("comment").value.trim();
+
+  if (name === "" || email === "" || phone === "" || message === "") {
+    Swal.fire('Error', 'Por favor completa todos los campos.', 'error');
+    return;
+  }
+
+  Swal.fire('Éxito', 'Formulario enviado exitosamente.', 'success');
 });
 
-suscribeButton.addEventListener("click", function (evt) {
+
+const suscribeLink = document.getElementById("suscribeLink");
+
+suscribeLink.addEventListener("click", function (evt) {
   evt.preventDefault();
+
+  const email = document.getElementsByName("E-mail")[0].value.trim();
+
+  if (email === "") {
+    Swal.fire('Error', 'Por favor ingresa tu dirección de correo electrónico.', 'error');
+    return;
+  }
 
   Swal.fire('Te has suscrito');
 });
+
