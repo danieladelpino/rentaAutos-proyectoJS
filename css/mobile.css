@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+
+}
+
+.redes {
+    display: none;
+}
+
+.banner_section {
+    padding: 0;
+}
+
+.contact_bt {
+    margin: 0.5rem;
+}
+
+.btn_main {
+    margin-left: 70px;
+}
+
+.contact_bt.active a {
+    margin: 0;
+}
+
+.about_img {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.about_text {
+    margin: 1rem;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+
+.gallery_box {
+
+    margin-bottom: 80px;
+}
+
+.reseñas-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom_row {
+    display: flex;
+    flex-direction: column;
+}
+
+.lorem_text {
+    margin-left: 100px;
+    margin-bottom: 30px;
+
+}

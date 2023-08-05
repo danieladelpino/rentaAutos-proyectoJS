@@ -1,64 +1,59 @@
-/* Estilos existentes */
-
-/* Agregar estilos para el botón flotante */
 .carrito-icon {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.mostrar-carrito {
+  font-size: 24px;
+  background-color: #fe5b29;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+}
+
+.carrito-modal {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrito-modal h2 {
+  margin-top: 0;
+}
+
+.carrito-modal .total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.carrito-modal.animated {
+  animation: fadeInUp 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  
-  .mostrar-carrito {
-    font-size: 24px;
-    background-color: #fe5b29; /* Color similar al de WhatsApp */
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    outline: none;
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  /* Estilos para el modal */
-  .carrito-modal {
-    display: none;
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .carrito-modal h2 {
-    margin-top: 0;
-  }
-  
-  .carrito-modal .total {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  /* Estilos adicionales para la animación del modal (opcional) */
-  .carrito-modal.animated {
-    animation: fadeInUp 0.3s ease;
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-/* Estilos para el modal */
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -80,8 +75,22 @@
   text-align: center;
 }
 
-/* Estilos para el botón de cerrar */
-#cerrar-mensaje {
-  margin-top: 10px;
+#finalizar-compra {
+  background-color: #fe5b29;
+  color: white;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#finalizar-compra:hover {
+  background-color: #e0410a;
+}
+
+.titulo-carrito {
+  font-size: 1.4rem;
+  padding: 0;
 }
