@@ -22,6 +22,11 @@ function limpiarCarrito() {
 
 const finalizarCompraBtn = document.getElementById("finalizar-compra");
 finalizarCompraBtn.addEventListener("click", function () {
+  if (productosCarrito.length === 0) {
+    Swal.fire('No puedes finalizar la compra porque el carrito está vacío.');
+    return;
+  }
+
   Swal.fire({
     text: "Nos pondremos en contacto contigo para finalizar la compra.",
     icon: "info",
@@ -32,3 +37,4 @@ finalizarCompraBtn.addEventListener("click", function () {
     }
   });
 });
+
